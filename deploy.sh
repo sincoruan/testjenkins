@@ -23,6 +23,9 @@ killTomcat()
 cd $PROJ_PATH/testjenkins
 mvn clean install
 
+java -jar $PROJ_PATH/testjenkins/target/testjenkins.war
+exit;
+
 # 停tomcat
 killTomcat
 
